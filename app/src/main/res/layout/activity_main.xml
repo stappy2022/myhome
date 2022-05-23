@@ -7,20 +7,219 @@
     tools:context=".MainActivity">
 
 
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:backgroundTint="#000AFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="18dp"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/view3"
+        app:layout_constraintEnd_toStartOf="@+id/btnicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/nick_name"
+        android:layout_width="104dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="92dp"
+        android:ems="15"
+        android:text="닉네임"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/setting"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/profile_pic"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/living"
+        android:layout_width="46dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="15"
+        android:text="지역"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/my_pro_pic"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_pic"
+        tools:ignore="MissingConstraints"/>
+
+    <View
+        android:layout_width="412dp"
+        android:layout_height="163dp"
+        android:layout_marginBottom="500dp"
+        android:background="@drawable/edge"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:layout_width="204dp"
+        android:layout_height="167dp"
+        android:background="@drawable/edge"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="236dp"
+        tools:ignore="MissingConstraints"/>
+
+    <View
+        android:layout_width="205dp"
+        android:layout_height="232dp"
+        android:background="@drawable/edge"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="420dp"
+        tools:ignore="MissingConstraints"/>
+
+    <View
+        android:layout_width="204dp"
+        android:layout_height="167dp"
+        android:background="@drawable/edge"
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="236dp"
+        tools:ignore="MissingConstraints"/>
+
+    <View
+        android:layout_width="204dp"
+        android:layout_height="228dp"
+        android:background="@drawable/edge"
+        tools:layout_editor_absoluteX="208dp"
+        tools:layout_editor_absoluteY="420dp"
+        tools:ignore="MissingConstraints"/>
+
     <Button
-        android:id="@+id/mypropic"
+        android:id="@+id/btn_home"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#000AFF"
+        android:insetLeft="0dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        app:strokeColor="#E9E3EA"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="62dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000AFF"
+        android:text="내 위치"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.352"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000AFF"
+        android:text="보관함"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.645"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000AFF"
+        android:text="My"
+        android:textColor="#FFFDFD"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <Button
+        android:id="@+id/btnicon"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="259dp"
+        android:backgroundTint="#000AFF"
+        android:text="아이콘"
+        android:textColor="#FFFFFF"
+        android:textSize="8sp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/btndrawer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/btndrawer"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:backgroundTint="#000AFF"
+        android:text="Drawer"
+        android:textColor="#FFFFFF"
+        android:textSize="7sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.953"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/my_pro_pic"
         android:layout_width="112dp"
         android:layout_height="38dp"
         android:layout_marginEnd="11dp"
-        android:background="@drawable/button_round"
+        android:backgroundTint="#000AFF"
         android:text="프로필수정"
         android:textColor="@color/white"
         android:textSize="15dp"
-
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.982"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="241dp" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="175dp" />
 
     <ImageButton
         android:id="@+id/setting"
@@ -30,43 +229,25 @@
         android:layout_marginTop="133dp"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="79dp"
-        android:background="white"
+        android:background="@color/white"
         android:scaleType="fitCenter"
         android:src="@drawable/setting"
-        app:layout_constraintBottom_toTopOf="@+id/mypropic"
+        app:layout_constraintBottom_toTopOf="@+id/my_pro_pic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
 
     <ImageButton
         android:id="@+id/profile_pic"
         android:layout_width="80dp"
         android:layout_height="69dp"
-        android:background="@drawable/button_round"
         android:scaleType="fitCenter"
         android:src="@drawable/all_time_legend"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="162dp" />
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="93dp" />
 
 
 
