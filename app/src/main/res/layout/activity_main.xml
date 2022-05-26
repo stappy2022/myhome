@@ -69,6 +69,7 @@
         tools:ignore="MissingConstraints"/>
 
     <View
+        android:id="@+id/view7"
         android:layout_width="412dp"
         android:layout_height="163dp"
         android:layout_marginBottom="500dp"
@@ -81,36 +82,56 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <View
+        android:id="@+id/view5"
         android:layout_width="204dp"
         android:layout_height="167dp"
         android:background="@drawable/edge"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="236dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.004"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
+        tools:ignore="MissingConstraints" />
 
     <View
+        android:id="@+id/view"
         android:layout_width="205dp"
         android:layout_height="232dp"
         android:background="@drawable/edge"
-        tools:layout_editor_absoluteX="-1dp"
-        tools:layout_editor_absoluteY="420dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.833"
+        tools:ignore="MissingConstraints" />
 
     <View
+        android:id="@+id/view4"
         android:layout_width="204dp"
         android:layout_height="167dp"
         android:background="@drawable/edge"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="236dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.418"
+        tools:ignore="MissingConstraints" />
 
     <View
+        android:id="@+id/view6"
         android:layout_width="204dp"
         android:layout_height="228dp"
         android:background="@drawable/edge"
-        tools:layout_editor_absoluteX="208dp"
-        tools:layout_editor_absoluteY="420dp"
-        tools:ignore="MissingConstraints"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/view3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_home"
@@ -185,7 +206,7 @@
         android:text="아이콘"
         android:textColor="#FFFFFF"
         android:textSize="8sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btndrawer"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -215,11 +236,13 @@
         android:text="프로필수정"
         android:textColor="@color/white"
         android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="175dp" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.251"
+        tools:ignore="MissingConstraints,TouchTargetSizeCheck" />
 
     <ImageButton
         android:id="@+id/setting"
@@ -245,11 +268,25 @@
         android:layout_height="69dp"
         android:scaleType="fitCenter"
         android:src="@drawable/all_time_legend"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="93dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.125"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
-
+    <Button
+        android:id="@+id/btnsetting"
+        android:layout_width="50dp"
+        android:layout_height="55dp"
+        android:text="설정"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.135" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnhome" type="id" />
+    <item name="btnalarm" type="id" />
+    <item name="btncountry" type="id" />
+    <item name="btnnotice" type="id" />
+    <item name="btnqna" type="id" />
+    <item name="btnregion" type="id" />
+    <item name="btnpersonal" type="id" />
+    <item name="btnexit" type="id" />
+    <item name="view2" type="id" />
+</resources>
